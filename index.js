@@ -45,16 +45,16 @@ for (let i = 0; i < a.length; i = i + 1) {
     console.log(a[i]);
 } */
 
- /* let a = {
-    nome: 'leo',
-    sobrenome: 'melo',
-    endereco: {
-        rua: 'parapuã',
-        numero: '330'
-    },
-    nascimento: {
-        data: '20/06/2005'
-    }
+/* let a = {
+   nome: 'leo',
+   sobrenome: 'melo',
+   endereco: {
+       rua: 'parapuã',
+       numero: '330'
+   },
+   nascimento: {
+       data: '20/06/2005'
+   }
 }
 /* a = ['leo','foi','abandonado','pelo','pai']; */
 /* console.log(a.nascimento); */
@@ -122,37 +122,11 @@ teste ("pai?", "bebida?");
 teste ("por que", "cigarro?");
 teste ("me abandonou?", "mulher?"); */
 
-/* function teste (a,b,c) {
-    for (let i = a; i < b; i = i + 1) {
+function teste(a, b, c) {
+    for (let i = a; i <= b; i = i + 1) {
         console.log(c);
         console.log(i);
     }
 }
 
-teste(0,10,"pai?"); */
-
-/* const p = [];
-
-p.push(2);
-p.push(3);
-p.push(4);
-p.push(5);
-
-console.log(p);
-
-let resultado;
-resultado = 1;
-
-for (let i = 1; i <= p.length - 1; i = i + 1 ) {
-    console.log(resultado);
-    resultado = resultado * p[i];
-    console.log(resultado);
-} */
-
-const nome = "banguela";
-
-if(nome == "banguela") {
-    console.log("oi, banguela!");
-} else {
-    console.log("saia falsa");
-}
+teste(0, 100, "dino");
