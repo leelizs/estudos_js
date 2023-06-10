@@ -122,11 +122,120 @@ teste ("pai?", "bebida?");
 teste ("por que", "cigarro?");
 teste ("me abandonou?", "mulher?"); */
 
-function teste(a, b, c) {
+/* function teste(a, b, c) {
     for (let i = a; i <= b; i = i + 1) {
         console.log(c);
         console.log(i);
     }
 }
 
-teste(0, 100, "dino");
+teste(0, 100, "dino"); */
+
+/* const a = [];
+
+a.push(55);
+
+a.push(64);
+
+a.push(487);
+
+a.push(1035);
+
+let resultado
+resultado = 1;
+
+    function teste(b) {
+        for (let i = b; i <= a.length - 1; i = i + 1) {
+            console.log(resultado);
+            resultado = resultado * a[i];
+            console.log(resultado);
+        }
+    }
+    teste(0);
+    teste(0); */
+
+    
+
+    /* function qualquer(c) {
+        const d = 5;
+        console.log(c + d);
+    }
+
+    qualquer(1);
+    qualquer(1); */
+
+    /* let anderson = 1;
+    console.log(anderson);
+
+    if(true) {
+        let anderson = 3;
+        console.log(anderson);
+        if(true) {
+            let anderson = 4;
+            anderson = 5;
+            console.log(anderson);
+        }
+        console.log(anderson);
+    }
+
+    console.log(anderson);
+
+
+    let leo = 1;
+    leo = 5;
+
+    console.log(leo); */
+
+    /* let leo = 1;
+
+    function teste(a) {
+        let leo = 1;
+        const anderson = 1;
+        console.log(anderson + a + leo);
+        leo = leo + 1;
+    }
+
+    teste(2);
+    teste(2); */
+
+   /*  const a = 1;
+
+    console.log(a);
+
+    {
+        const a = 2;
+        console.log(a);
+
+    }
+
+    console.log(a); */
+
+    const alunos = [];
+
+    alunos.push({
+        nome: "Pedro",
+        nota1: 6,
+        nota2: 9,
+        nota3: 5,
+        nota4: 10,
+        media: 0
+    })
+
+    alunos.push({
+        nome: "Anderson",
+        nota1: 9,
+        nota2: 9,
+        nota3: 8,
+        nota4: 10,
+        media: 0
+    })
+
+    function media(a, b, c, d) {
+        return (a + b + c + d) / 4;
+    }
+
+    for(let i = 0; i < alunos.length; i = i + 1) {
+        alunos[i].media = media(alunos[i].nota1, alunos[i].nota2, alunos[i].nota3, alunos[i].nota4)
+    }
+
+    console.log(alunos);
