@@ -88,3 +88,40 @@ console.log("Área: " + resultado + "cm²"); */
 
 // exercício 5
 
+
+
+/* function areaCirculo(raio) {
+    const area = Math.PI * raio * raio;
+    const perimetro = 2 * Math.PI * raio;
+    const resultado = {
+        area: area,
+        perimetro: perimetro
+    }
+    return resultado;
+}
+
+const ver = areaCirculo(10);
+
+console.log(ver); */
+
+/* function investimento(C,i,t) {
+    const M = C * Math.pow((1 + i),t);
+    return M;
+}
+
+const resultado = investimento(1000000,0.005,1);
+
+console.log(resultado); */
+
+/* function calcularFatorial(n) {
+    let fatorial = 1;
+    for(let i = 1; i <= n; i = i + 1) {
+        fatorial = fatorial * i;
+    }
+    return fatorial;
+}
+
+const resultado = calcularFatorial(5);
+
+console.log(resultado); */
+
