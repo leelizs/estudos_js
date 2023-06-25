@@ -125,3 +125,124 @@ const resultado = calcularFatorial(5);
 
 console.log(resultado); */
 
+/* function imprimir(n) {
+    for(let i = 1; i <= n; i = i + 1) {
+        console.log(i);
+    }
+}
+
+imprimir(10); */
+
+/* function imprimir(n) {
+    for(let i = 1; i <= n; i = i + 1) {
+        if(i % 2 == 1) {
+            console.log(i);
+        }
+    }
+}
+
+imprimir(100); */
+
+/* function imprimir(n) {
+    for(let i = 8; i <= n; i = i + 1) {
+        if(i % 8 == 0) {
+            console.log(i);
+        }
+    }
+}
+
+imprimir(80); */
+
+/* function imprimir(n) {
+    for(let i = 1; i <= 10; i = i + 1) {
+        console.log(i * n);
+    }
+}
+
+const resultado = imprimir(3);
+
+for(let i = 1; i <= 10; i = i + 1) {
+    console.log(" ");
+    imprimir(i);
+} */
+
+/* function calcularFatorial(n) {
+    let fatorial = 1;
+    for(let i = 1; i <= n; i = i + 1) {
+        fatorial = fatorial * i;
+    }
+    return fatorial
+}
+
+const resultado = calcularFatorial(3);
+
+console.log(resultado); */
+
+/* function calcularSoma(n) {
+    let soma = 0;
+    for(let i = 10; i <= n; i++) {
+        if(i % 2 == 1) {
+            //soma = soma + i;
+            soma += i;
+            //i = i + 2;
+            //++;
+            //i++;
+            console.log(i);
+        }
+    }
+    return soma;
+}
+
+const resultado = calcularSoma(30);
+
+console.log(resultado); */
+
+/* const n = [2,3,6,7,8,3];
+
+let soma = 0;
+for(let i = 0; i < n.length; i++) {
+    soma = soma + n[i];
+}
+
+console.log(soma); */
+
+/* const n = [6,7,8,4,8,9];
+
+let media = 0;
+for(let i = 0; i < n.length; i++) {
+    media = (media + n[i]);
+}
+media = media / n.length;
+
+console.log(media); */
+
+/* function retornarArray(n) {
+    const vazio = [];
+    for(let i = 0; i < n.length; i++) {
+        if(n[i] > 0 && n[i] < 5) {
+            vazio.push(n[i]);
+        }
+    }
+    return vazio;
+}
+const nm = [-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10];
+const resultado = retornarArray(nm);
+
+console.log(resultado); */
+
+function juntarArray(n,n2) {
+    const newArray = [];
+    for(let i = 0; i < n.length; i++) {
+        newArray.push(n[i]);
+    }
+    for(let i = 0; i < n2.length; i++) {
+        newArray.push(n2[i]);
+    }
+    return newArray;
+}
+
+const nm = [1,2];
+const nm2 = [3,4];
+const resultado = juntarArray(nm,nm2);
+console.log(resultado);
+
