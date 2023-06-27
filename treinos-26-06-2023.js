@@ -5,16 +5,26 @@ let baralho = [
     'A', 'A', 
     'B', 'B', 
     'C', 'C', 
-    'D', 'D', 
-    'E', 'E', 
-    'F', 'F', 
-    'G', 'G', 
-    'H', 'H', 
-    'I', 'I', 
-    'J', 'J'
+    //'D', 'D', 
+    //'E', 'E', 
+    //'F', 'F', 
+    //'G', 'G', 
+    //'H', 'H', 
+    //'I', 'I', 
+    //'J', 'J'
 ]
 
-baralho = baralho.map(value => ({ valor: value, cima: false }))
+//baralho = baralho.map(value => ({ valor: value, cima: false }))
+
+const baralho2 = []
+for(let i = 0; i < baralho.length; i++) {
+    baralho2.push({
+        valor: baralho[i], cima: false
+    })
+}
+baralho = baralho2
+
+console.log(baralho)
 
 function embaralhar() {
     baralho.sort(()=> Math.random() - 0.5);
