@@ -5,26 +5,27 @@ let baralho = [
     'A', 'A', 
     'B', 'B', 
     'C', 'C', 
-    //'D', 'D', 
-    //'E', 'E', 
-    //'F', 'F', 
-    //'G', 'G', 
-    //'H', 'H', 
-    //'I', 'I', 
-    //'J', 'J'
+    'D', 'D', 
+    'E', 'E', 
+    'F', 'F', 
+    'G', 'G', 
+    'H', 'H', 
+    'I', 'I', 
+    'J', 'J'
 ]
 
-//baralho = baralho.map(value => ({ valor: value, cima: false }))
+const jogador = prompt('Digite o seu nome para o jogo da memória começar: ');
+console.clear();
 
-const baralho2 = []
+baralho = baralho.map(value => ({ valor: value, cima: false }));
+
+/* const baralho2 = []
 for(let i = 0; i < baralho.length; i++) {
     baralho2.push({
         valor: baralho[i], cima: false
     })
 }
-baralho = baralho2
-
-console.log(baralho)
+baralho = baralho2 */
 
 function embaralhar() {
     baralho.sort(()=> Math.random() - 0.5);
@@ -42,14 +43,14 @@ function pegaPosicoesCartas() {
         let x = 0
         let y = 0
 
-        let coordenadas = prompt('Digite as posições: ')
+        let coordenadas = prompt('Digite as posições das cartas: ');
 
         coordenadas = coordenadas.trim()
 
         coordenadas = coordenadas.split(' ')
 
         if (coordenadas.length != 2) {
-            console.log('Dígite 2 números com espaços!!!')
+            console.log('Dígite 2 números, com espaços entre eles. exemplo (1 2)!')
             isError = true
             continue
         } else {
@@ -81,13 +82,13 @@ function pegaPosicoesCartas() {
             }
 
             if(baralho[x - 1].cima) {
-                console.log('Essa carta ja está virada!!!')
+                console.log('Essa carta ja está virada!')
                 isError = true
                 continue
             }
 
             if(baralho[y - 1].cima) {
-                console.log('Essa carta ja está virada!!!')
+                console.log('Essa carta ja está virada!')
                 isError = true
                 continue
             }
@@ -156,6 +157,7 @@ function limpar() {
     console.clear()
 }
 
+// 5 segundos de espera
 function pause(segundos) {
     for(let i = 0; i < segundos; i++) {
         execSync('sleep 1');
@@ -170,7 +172,7 @@ while (status == -1) {
 
     limpar()
     desenharTabuleiro()
-    // 5 segundos 
+
     pause(5)
     if(baralho[x - 1].valor === baralho[y - 1].valor) {
         baralho[x - 1].cima = true
@@ -186,7 +188,7 @@ while (status == -1) {
 }
 
 limpar()
-console.log('Você ganhou!!!')
+console.log(`Parabéns ${jogador}, você ganhou!`);
 
 /*A B A B C C
 0 1 2 3 4 5

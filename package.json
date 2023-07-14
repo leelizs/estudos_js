@@ -4,7 +4,6 @@
   "description": "��#\u0000 \u0000E\u0000S\u0000T\u0000U\u0000D\u0000O\u0000S\u0000 \u0000B\u0000�\u0000S\u0000I\u0000C\u0000O\u0000S\u0000 \u0000D\u0000E\u0000 \u0000J\u0000A\u0000V\u0000A\u0000S\u0000C\u0000R\u0000I\u0000P\u0000T\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "start": "treinos-24-06-2023.js"
   },
   "repository": {
     "type": "git",

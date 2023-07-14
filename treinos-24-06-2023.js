@@ -4,7 +4,7 @@ const tabuleiro = [
     ['-', '-', '-'],
     ['-', '-', '-'],
     ['-', '-', '-'],
-]
+];
 
 function renderizarTabuleiro() {
     for (let i = 0; i < tabuleiro.length; i++) {
